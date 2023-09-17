@@ -1,0 +1,37 @@
+[debug] [2023-09-17T17:09:23.189Z] ----------------------------------------------------------------------
+[debug] [2023-09-17T17:09:23.192Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Michael\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-17T17:09:23.193Z] CLI Version:   12.5.4
+[debug] [2023-09-17T17:09:23.193Z] Platform:      win32
+[debug] [2023-09-17T17:09:23.194Z] Node Version:  v18.16.1
+[debug] [2023-09-17T17:09:23.195Z] Time:          Sun Sep 17 2023 12:09:23 GMT-0500 (hora de Ecuador)
+[debug] [2023-09-17T17:09:23.195Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-17T17:09:23.350Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-17T17:09:23.351Z] > authorizing via signed-in user (mag.codev@gmail.com)
+[debug] [2023-09-17T17:09:23.351Z] [iam] checking project wtorii for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-17T17:09:23.354Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wtorii:testIamPermissions [none]
+[debug] [2023-09-17T17:09:23.354Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wtorii:testIamPermissions x-goog-quota-user=projects/wtorii
+[debug] [2023-09-17T17:09:23.354Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wtorii:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-17T17:09:24.147Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wtorii:testIamPermissions 200
+[debug] [2023-09-17T17:09:24.147Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wtorii:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-17T17:09:24.148Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wtorii [none]
+[debug] [2023-09-17T17:09:24.602Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wtorii 200
+[debug] [2023-09-17T17:09:24.602Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wtorii {"projectId":"wtorii","projectNumber":"1042282961776","displayName":"wtorii","name":"projects/wtorii","resources":{"hostingSite":"wtorii"},"state":"ACTIVE","etag":"1_08e813ea-ebce-4bfd-88be-121822271f64"}
+[debug] [2023-09-17T17:09:31.855Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wtorii/sites pageToken=&pageSize=10
+[debug] [2023-09-17T17:09:32.869Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wtorii/sites 200
+[debug] [2023-09-17T17:09:32.869Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wtorii/sites {"sites":[{"name":"projects/wtorii/sites/wtorii","defaultUrl":"https://wtorii.web.app","appId":"1:1042282961776:web:acdc2be559e74f7afd8db5","type":"DEFAULT_SITE"}]}
+[debug] [2023-09-17T17:09:32.870Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1042282961776:web:acdc2be559e74f7afd8db5/config [none]
+[debug] [2023-09-17T17:09:33.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1042282961776:web:acdc2be559e74f7afd8db5/config 200
+[debug] [2023-09-17T17:09:33.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1042282961776:web:acdc2be559e74f7afd8db5/config {"projectId":"wtorii","appId":"1:1042282961776:web:acdc2be559e74f7afd8db5","storageBucket":"wtorii.appspot.com","apiKey":"AIzaSyDvFssHwDuYct6Qds-GZlG6HQKigXDbatI","authDomain":"wtorii.firebaseapp.com","messagingSenderId":"1042282961776"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
