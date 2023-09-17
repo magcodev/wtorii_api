@@ -1,11 +1,11 @@
 {
-  "name": "wtorii",
+  "name": "wtorii_api",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "json-server --watch src/db.json --port 5000",
     "lint": "next lint",
     "server": "json-server --watch src/db.json --port 5000"
   },
